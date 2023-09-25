@@ -1,8 +1,29 @@
-# React + Vite
+# Canil & Adestramento 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um site desenvolvido para um canil com serviços de adestramento de cães, criado com React e Vite.
 
-Currently, two official plugins are available:
+## Requisitos do Sistema
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Node.js (v14.0.0 ou superior)
+- npm (v6.0.0 ou superior)
+- Vite (v2.0.0 ou superior)
+
+## Instalação
+
+1. Clone este repositório:
+
+```bash
+git clone https://github.com/seu-usuario/nome-do-repositorio.git
+cd nome-do-repositorio
+
+1. Instale as dependências usando npm:
+
+npm install
+```
+
+## Executando a Aplicação
+
+Para iniciar a aplicação em modo de desenvolvimento, utilize o seguinte comando:
+```bash
+npm run dev
+```
