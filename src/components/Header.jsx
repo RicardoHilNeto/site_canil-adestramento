@@ -1,51 +1,69 @@
 import styled from "styled-components"
-import Logo from "../assets/logo 1.svg"
+import LogoImage from "../assets/logo 1.svg"
 import LoginImage from "../assets/Frame 2.svg"
 
-function Header(){
 
-    const Cabecalho = styled.header`
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        width: 100%;
-        height: 6em;
-        display: flex;
-        justify-content: space-between;  
-        background-color: orange;
-    `
-    const Lista = styled.ul`
-        display: flex;
-        list-style: none; 
-        padding: 0; 
-    `
-    const Li = styled.li`
-        margin: 0;
-    `
-    const A = styled.a`
-        text-decoration: none; 
-        padding: 10px 20px;
-        background-color: #f0f0f0; 
-        border-radius: 5px; 
-        &:hover{
-            background-color: #e0e0e0;
-        }
-    `
+const HeaderContainer = styled.header`
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 6em;
+    display: flex;
+    justify-content: space-between;  
+    background-color: orange;
+`
 
-    return(
+const MenuList = styled.ul`
+    display: flex;
+    list-style: none; 
+    margin-top: 2.3em;
+
+`
+
+const MenuItem = styled.li`
+    margin: 0 0.5em;
+`
+
+const MenuLink = styled.a`
+    text-decoration: none; 
+    padding: 10px 20px;
+    background-color: #000; 
+    border-radius: 5px; 
+    color: orange;
+    &:hover{
+        color: #fff;
+    }
+`
+
+const UserSection = styled.div`
+    margin: 1em 1em 0 0
+`
+
+const handleButtonLoginClick = () => {
+    console.log("Redirecionando para a tela de login!")
+}
+const handleButtonLogoClick = () => {
+    console.log("Redirecionando para a Home!")
+}
+
+function Header() {
+    return (
         <>
-        <Cabecalho>
-            <img src={Logo} alt="" />
-            <nav>
-            <Lista>
-                    <Li><A href="#">Home</A></Li>
-                    <Li><A href="#">Canil</A></Li>
-                    <Li><A href="#">Cursos</A></Li>
-                    <Li><A href="#">Suporte</A></Li>
-            </Lista>
-            </nav>
-            <img src={LoginImage} alt="" />
-        </Cabecalho>
+            <HeaderContainer>
+                <img src={LogoImage} onClick={handleButtonLogoClick} alt="Logo" />
+                <nav>
+                    <MenuList>
+                        <MenuItem><MenuLink href="#" onClick={handleButtonLogoClick}>Home</MenuLink></MenuItem>
+                        <MenuItem><MenuLink href="#">Canil</MenuLink></MenuItem>
+                        <MenuItem><MenuLink href="#">Cursos</MenuLink></MenuItem>
+                        <MenuItem><MenuLink href="#">Suporte</MenuLink></MenuItem>
+                    </MenuList>
+                </nav>
+                    <UserSection>
+                        <img src={LoginImage} onClick={handleButtonLoginClick} alt="Login" />
+                    </UserSection>
+            </HeaderContainer>
         </>
     )
 }
