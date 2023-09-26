@@ -12,6 +12,8 @@ const HeaderContainer = styled.header`
     display: flex;
     justify-content: space-between;  
     background-color: orange;
+    border-bottom: 3px solid black;
+
 `
 
 const MenuList = styled.ul`
@@ -37,7 +39,7 @@ const MenuLink = styled.a`
 `
 
 const UserSection = styled.div`
-    margin: 1em 1em 0 0
+    margin: 1em 1em 0 0;
 `
 
 const handleButtonLoginClick = () => {

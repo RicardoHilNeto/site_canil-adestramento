@@ -1,6 +1,7 @@
-
 import Header from './components/Header';
 import { createGlobalStyle } from 'styled-components';
+import Banner from './components/Banner';
+import Raca from './components/Raca';
 
 const GlobalStyle = createGlobalStyle`
   *{
@@ -16,6 +17,8 @@ function App() {
     <>
       <GlobalStyle/>
       <Header/>
+      <Banner/>
+      <Raca/>
     </>
   )
 }
