@@ -5,7 +5,7 @@ import Tank from '../assets/Tank.png';
 
 const Info = styled.div`
   width: 100%;
-  height: 50vh;
+  height: 80vh;
   display: flex;
 `;
 
@@ -20,8 +20,9 @@ const Left = styled.div`
 
 const Center = styled.div`
   width: 33.3%;
-  height: 80vh;
+  height: 70vh;
   padding: 10px;
+  margin-top: 100px;
   overflow: auto; /* Adicionado para habilitar scroll se o conteúdo for muito longo */
 `;
 
@@ -37,7 +38,7 @@ const Right = styled.div`
 function Raca() {
     return (
       <>
-        <h1 style={{ textAlign: 'center' }}>Pastor Belga Malinois</h1>
+        <h1 style={{ textAlign: 'center', backgroundColor: 'orange' }}>Sobre a Raça:</h1>
         <Info>
           <Left></Left>
           <Center>

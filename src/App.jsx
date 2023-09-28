@@ -2,6 +2,7 @@ import Header from './components/Header';
 import { createGlobalStyle } from 'styled-components';
 import Banner from './components/Banner';
 import Raca from './components/Raca';
+import Rodape from './components/Rodape';
 
 const GlobalStyle = createGlobalStyle`
   *{
@@ -19,6 +20,7 @@ function App() {
       <Header/>
       <Banner/>
       <Raca/>
+      <Rodape/>
     </>
   )
 }
