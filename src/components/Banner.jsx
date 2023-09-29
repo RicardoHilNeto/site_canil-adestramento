@@ -18,7 +18,7 @@ const Nome = styled.h1`
 const TextBanner = styled.div`
   position: relative;
   left: 50%;
-  top: 20px;
+  padding: 10% 0;
   background-color: transparent;
   width: 45%;
   height: 80vh;

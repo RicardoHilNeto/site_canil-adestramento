@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { Link } from "react-router-dom"
 import SendEmail from "../assets/mail-send.png"
 import Logo from "../assets/logo 1.svg"
 import FacebookLogo from "../assets/facebook.png"
@@ -116,6 +117,10 @@ const CopyWrite = styled.p`
     color:grey;
 `
 
+const InstagramLink = styled(Link)`
+    display: inline-block; // Ensure the link takes the size of the image
+`;
+
 
 
 const NomeDoCanil = "Nome"
@@ -141,9 +146,15 @@ function Rodape(){
             <ContainerLeft>
                 <Nav>
                     <Ul>
+                       <Link to={'/home'}>
                         <Li>About</Li>
-                        <Li>Cachorros</Li>
+                       </Link>
+                       <Link to={'/canil'}>
+                        <Li>Canil</Li>
+                       </Link>
+                       <Link to={'/cursos'}>
                         <Li>Cursos</Li>
+                       </Link>
                     </Ul>
                 </Nav>
             </ContainerLeft>
@@ -165,7 +176,9 @@ function Rodape(){
                         <LiLogo>
                             <ImageLogos src={FacebookLogo} alt="" />
                             <ImageLogos src={TwitterLogo} alt="" />
+                            <InstagramLink to="https://www.instagram.com/netohilkner" about="blank">
                             <ImageLogos src={InstagramLogo} alt="" />
+                            </InstagramLink>
                             <ImageLogos src={WhatsAppLogo} alt="" />
                         </LiLogo>
                     </Ul>

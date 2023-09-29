@@ -20,52 +20,15 @@ const Body = styled.div`
   display:flex;
 `;
 
-const Left = styled.div`
-  width: 50%;
-  height: 90vh;
-`;
 
-const Size = styled.div`
-  display:flex;
-  justify-content: space-around;
-`;
-
-const Input = styled.input`
-  width: 30%;
-  margin-top: 30%;
-  border: none;
-  background-color: transparent;
-`;
-
-const ArrumaLinha = styled.div`
-  display: flex;
-  justify-content: space-around;
-`;
-
-const Linha = styled.div`
-  width: 35%;
-  border-bottom: 3px solid black;
-  position: relative;
-  left: 1.5em;
-`;
-
-const ArrumaIcon = styled.div`
-  display: flex;
-  justify-content: space-around;
-`;
-
-const Image = styled.img`
-  position: relative;
-  left: 10em;
-  bottom: 5em;
-`;
 
 const Right = styled.div`
-  width: 50%;
+  width: 80%;
   height: 90vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 0 10em;
 `;
 
 const Card = styled.div`
@@ -87,7 +50,7 @@ const TextCard = styled.div`
     width: 100%;
     height:60%;
     color: white;
-    padding: 0 15%;
+    padding: 0 25%;
     font-size: 38px
 `
 const OneLine =styled.p`
@@ -100,40 +63,13 @@ export default function Login() {
   return (
     <>
       <Body>
-        <Left>
-          <Size>
-            <Input type="name"/>
-            <Input type="tel" />
-          </Size>
-          <ArrumaLinha>
-            <Linha/>
-            <Linha/>
-          </ArrumaLinha>
-          <ArrumaIcon>
-            <Image src={Pin} alt="" />
-            <Image src={Phone} alt="" />
-          </ArrumaIcon>
-          <Size>
-            <Input type="name"/>
-            <Input type="tel" />
-          </Size>
-          <ArrumaLinha>
-            <Linha/>
-            <Linha/>
-          </ArrumaLinha>
-          <ArrumaIcon>
-            <Image src={Mail} alt="" />
-            <Image src={Insta} alt="" />
-          </ArrumaIcon>
-        </Left>
         <Right>
           <Card>
             <CardContent>
               <ImageIcon src={Local} alt="" />
               <TextCard>
                 <p>Estrada velha de Sorocaba</p>
-                <p>Numero: 763</p>
-                <p>CEP: 06709320</p>
+                <p>CEP: 06709-320</p>
               </TextCard>
             </CardContent>
           </Card>

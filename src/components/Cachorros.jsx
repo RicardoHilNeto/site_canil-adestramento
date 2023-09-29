@@ -5,6 +5,11 @@ import Gamora from '../assets/FemeaGamora.png'
 import Luna from '../assets/luna.png'
 import Rebeca from '../assets/rebeca.jpg'
 import Rauchig from '../assets/rauchig.jpg'
+import Thor from '../assets/thor.png'
+import Jully from '../assets/jully.jpg'
+import Winchester from '../assets/Winchester.png'
+import Koda from '../assets/koda.png'
+import K9 from '../assets/K9.jpg'
 
 const Sexo = styled.div`
     display: flex;
@@ -95,18 +100,18 @@ function Cachorros(){
             </Machos>
             <Machos>
                 <Image>
-                    <Photo src={FalSolo} alt="" />
+                    <Photo src={Thor} alt="" />
                 </Image>
                 <Name>
-                    <h1>Fal</h1>
+                    <h1>Thor</h1>
                 </Name>
             </Machos>
             <Machos>
                 <Image>
-                    <Photo src={Rauchig} alt="" />
+                    <Photo src={Winchester} alt="" />
                 </Image>
                 <Name>
-                    <h1>Rauchig</h1>
+                    <h1>Winchester</h1>
                 </Name>
             </Machos>
         </CorpoMacho>
@@ -117,10 +122,10 @@ function Cachorros(){
         <CorpoMacho>
             <Machos>
                 <Image>
-                    <Photo src={Gamora} alt="" />
+                    <Photo src={Jully} alt="" />
                 </Image>
                 <Name>
-                    <h1>Gamora</h1>
+                    <h1>Jully</h1>
                 </Name>
             </Machos>
             <Machos>
@@ -148,18 +153,18 @@ function Cachorros(){
         <CorpoMacho>
             <Machos>
                 <Image>
-                    <Photo src={Fal} alt="" />
+                    <Photo src={Koda} alt="" />
                 </Image>
                 <Name>
-                    <h1>Fal</h1>
+                    <h1>Koda</h1>
                 </Name>
             </Machos>
             <Machos>
                 <Image>
-                    <Photo src={FalSolo} alt="" />
+                    <Photo src={K9} alt="" />
                 </Image>
                 <Name>
-                    <h1>Fal</h1>
+                    <h1>K9</h1>
                 </Name>
             </Machos>
             <Machos>
