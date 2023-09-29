@@ -57,6 +57,9 @@ const Machos = styled.div`
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(128,128,128,1) 100%);
     border-radius: 10px;
+    @media screen and (min-width: 1000px) {
+        height: 45vh;
+}
 `
 const Image = styled.div`
     width: 80%;

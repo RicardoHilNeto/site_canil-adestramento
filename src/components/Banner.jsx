@@ -22,12 +22,16 @@ const TextBanner = styled.div`
   background-color: transparent;
   width: 45%;
   height: 80vh;
+  @media screen and (min-width: 1000px) {
+    padding: 5% 0;
+}
   `;
 const TextInfo = styled.p`
     text-align: center;
     padding: 10px 0;
     font-size: 24px;
     color: white;
+    
 `
 const NomeDoCanil = "Nome";
 

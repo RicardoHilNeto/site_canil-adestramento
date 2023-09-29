@@ -89,14 +89,17 @@ const ContainerWrapper = styled.div`
 `
 const Nav = styled.nav`
     text-align: center;
-    margin: 40% 0
+    margin: 40% 0;
+
 `
 const Ul = styled.ul`
     list-style: none;
+    
 `
 const Li = styled.li`
     padding-bottom: 10px;
     color: grey;
+
 `
 const LiLogo = styled.li`
     position: relative;

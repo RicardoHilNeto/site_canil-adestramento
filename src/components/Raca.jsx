@@ -5,7 +5,7 @@ import Tank from '../assets/Tank.png';
 
 const Info = styled.div`
   width: 100%;
-  height: 80vh;
+  height: 85vh;
   display: flex;
 `;
 
@@ -15,7 +15,7 @@ const Left = styled.div`
   background-repeat: no-repeat;
   background-position: center center;
   width: 33.3%;
-  height: 80vh;
+  height: 100%; 
 `;
 
 const Center = styled.div`
@@ -23,7 +23,11 @@ const Center = styled.div`
   height: 70vh;
   padding: 10px;
   margin-top: 100px;
-  overflow: auto; /* Adicionado para habilitar scroll se o conteúdo for muito longo */
+  overflow: auto;
+  @media screen and (min-width: 1000px) {
+        position: relative;
+        bottom: 50px
+}
 `;
 
 const Right = styled.div`
@@ -32,7 +36,7 @@ const Right = styled.div`
   background-repeat: no-repeat;
   background-position: center center;
   width: 33.3%;
-  height: 80vh;
+  height: 100%; 
 `;
 
 function Raca() {

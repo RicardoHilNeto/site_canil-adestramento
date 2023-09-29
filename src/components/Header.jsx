@@ -44,7 +44,11 @@ const UserSection = styled.div`
 const ImageHome = styled.img`
     position: absolute;
     bottom: 52em; 
+    @media screen and (min-width: 1000px) {
+        bottom: 34em; 
+}
 `;
+
 
 function Header() {
     return (

@@ -1,16 +1,13 @@
-import React from 'react';
-import Header from '../components/Header';
 import Banner from '../components/Banner';
 import Raca from '../components/Raca';
-import Rodape from '../components/Rodape';
+import Tempo from '../components/Tempo';
 
 export default function Home() {
   return (
     <>
-    {/* <Header/> */}
     <Banner/>
+    <Tempo/>
     <Raca/>
-    {/* <Rodape/> */}
     </>
 
   )
