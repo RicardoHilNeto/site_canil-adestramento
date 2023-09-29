@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import BannerImg from "../assets/banner.jpeg";
 
+
 const Back = styled.div`
   background-image: url(${BannerImg});
   background-size: cover; /* Maintain aspect ratio and cover the container */

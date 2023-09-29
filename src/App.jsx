@@ -1,28 +1,26 @@
-import Header from './components/Header';
+import React from 'react';
 import { createGlobalStyle } from 'styled-components';
-import Banner from './components/Banner';
-import Raca from './components/Raca';
+import { Outlet } from "react-router-dom";
+import Header from './components/Header';
 import Rodape from './components/Rodape';
 
 const GlobalStyle = createGlobalStyle`
-  *{
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
 `
 
-function App() {
-
+export default function App() {
   return (
     <>
-      <GlobalStyle/>
-      <Header/>
-      <Banner/>
-      <Raca/>
-      <Rodape/>
+      <div className="container">
+        <Header/>
+        <GlobalStyle />
+        <Outlet />
+        <Rodape/>
+      </div>
     </>
-  )
+  );
 }
-
-export default App

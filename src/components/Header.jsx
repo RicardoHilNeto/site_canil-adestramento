@@ -1,7 +1,8 @@
-import styled from "styled-components"
-import LogoImage from "../assets/logo 1.svg"
-import LoginImage from "../assets/Frame 2.svg"
-
+import React from 'react';
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import LogoImage from '../assets/logo 1.svg';
+import LoginImage from '../assets/Frame 2.svg';
 
 const HeaderContainer = styled.header`
     margin: 0;
@@ -10,64 +11,70 @@ const HeaderContainer = styled.header`
     width: 100%;
     height: 6em;
     display: flex;
-    justify-content: space-between;  
+    justify-content: space-between;
     background-color: orange;
     border-bottom: 3px solid black;
-
-`
+`;
 
 const MenuList = styled.ul`
     display: flex;
-    list-style: none; 
+    list-style: none;
     margin-top: 2.3em;
-
-`
+`;
 
 const MenuItem = styled.li`
     margin: 0 0.5em;
-`
+`;
 
-const MenuLink = styled.a`
-    text-decoration: none; 
+const MenuLink = styled(Link)`
+    text-decoration: none;
     padding: 10px 20px;
-    background-color: #000; 
-    border-radius: 5px; 
+    background-color: #000;
+    border-radius: 5px;
     color: orange;
-    &:hover{
+    &:hover {
         color: #fff;
     }
-`
+`;
 
 const UserSection = styled.div`
     margin: 1em 1em 0 0;
-`
+`;
 
-const handleButtonLoginClick = () => {
-    console.log("Redirecionando para a tela de login!")
-}
-const handleButtonLogoClick = () => {
-    console.log("Redirecionando para a Home!")
-}
+const ImageHome = styled.img`
+    position: absolute;
+    bottom: 52em; 
+`;
 
 function Header() {
     return (
-        <>
-            <HeaderContainer>
-                <img src={LogoImage} onClick={handleButtonLogoClick} alt="Logo" />
-                <nav>
-                    <MenuList>
-                        <MenuItem><MenuLink href="#" onClick={handleButtonLogoClick}>Home</MenuLink></MenuItem>
-                        <MenuItem><MenuLink href="#">Canil</MenuLink></MenuItem>
-                        <MenuItem><MenuLink href="#">Cursos</MenuLink></MenuItem>
-                        <MenuItem><MenuLink href="#">Suporte</MenuLink></MenuItem>
-                    </MenuList>
-                </nav>
-                    <UserSection>
-                        <img src={LoginImage} onClick={handleButtonLoginClick} alt="Login" />
-                    </UserSection>
-            </HeaderContainer>
-        </>
-    )
+        <HeaderContainer>
+            <Link to="/home">
+                <ImageHome src={LogoImage} alt="Logo" />
+            </Link>
+            <nav>
+                <MenuList>
+                    <MenuItem>
+                        <MenuLink to="/home">Home</MenuLink>
+                    </MenuItem>
+                    <MenuItem>
+                        <MenuLink to="/canil">Canil</MenuLink>
+                    </MenuItem>
+                    <MenuItem>
+                        <MenuLink to="/cursos">Cursos</MenuLink>
+                    </MenuItem>
+                    <MenuItem>
+                        <MenuLink to="/contato">Suporte</MenuLink>
+                    </MenuItem>
+                </MenuList>
+            </nav>
+            <UserSection>
+                <Link to="/login">
+                    <img src={LoginImage} alt="Login" />
+                </Link>
+            </UserSection>
+        </HeaderContainer>
+    );
 }
 
-export default Header
+export default Header;

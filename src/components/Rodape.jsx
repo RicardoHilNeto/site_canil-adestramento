@@ -3,7 +3,6 @@ import SendEmail from "../assets/mail-send.png"
 import Logo from "../assets/logo 1.svg"
 import FacebookLogo from "../assets/facebook.png"
 import TwitterLogo from "../assets/twitter-alt-circle.png"
-import LinkedinLogo from "../assets/linkedin.png"
 import InstagramLogo from "../assets/instagram.png"
 import WhatsAppLogo from "../assets/whatsapp.png"
 
@@ -12,7 +11,7 @@ const CorpoDoRodape = styled.footer`
     height: 300px;
     background-color: black;
     display:flex;
-    
+    box-sizing: border-box;
 `
 const Left = styled.div`
   background-size: cover;
@@ -67,10 +66,8 @@ const Right = styled.div`
   border: 1px solid black;
 `;
 const ImageLogo = styled.img`
-    position: absolute;
-    right: 1000px;
-    top: 1670px;
-    width: 15%;
+width: 15%;
+float: right;
 `
 const ContainerLeft = styled.div`
     width: 33.3%;
