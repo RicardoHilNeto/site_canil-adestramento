@@ -6,6 +6,7 @@ import Macaco from '../assets/macacofundoazul.png';
 import Mangueira from '../assets/mangueira.png';
 import Protecao from '../assets/protecaobraco.png';
 import Jovem from '../assets/Design sem nome (6).png'
+import Adulto from '../assets/adulto.png'
 
 const Body = styled.div`
 
@@ -39,7 +40,7 @@ function Tempo() {
     <Arrow src={SetaEsquerda} alt="" />
     <Image src={Jovem} alt="" />
     <Arrow src={SetaEsquerda} alt="" />
-    <Image src={Filhote} alt="" />
+    <Image src={Adulto} alt="" />
     </Container>
     <ContainerDown>
     <DownArrow src={SetaBaixo} alt="" />
