@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import LogoImage from '../assets/logo 1.svg';
@@ -47,6 +46,9 @@ const ImageHome = styled.img`
     @media screen and (min-width: 1000px) {
         bottom: 34em; 
 }
+    @media screen and (min-width: 1200px) {
+        bottom: 50em; 
+}
 `;
 
 
@@ -66,6 +68,9 @@ function Header() {
                     </MenuItem>
                     <MenuItem>
                         <MenuLink to="/cursos">Cursos</MenuLink>
+                    </MenuItem>
+                    <MenuItem>
+                        <MenuLink to="/shop">Loja</MenuLink>
                     </MenuItem>
                     <MenuItem>
                         <MenuLink to="/contato">Suporte</MenuLink>
