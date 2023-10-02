@@ -1,4 +1,4 @@
-import ReactDOM from 'react-dom';
+import {createRoot} from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import App from './App.jsx';
 import Home from './routes/Home.jsx';
@@ -24,5 +24,4 @@ const AppRouter = () => (
     </Routes>
   </Router>
 );
-
-ReactDOM.createRoot(document.getElementById('root')).render(<AppRouter />);
+createRoot(document.getElementById('root')).render(<AppRouter />);

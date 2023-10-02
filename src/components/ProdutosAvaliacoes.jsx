@@ -62,9 +62,9 @@ function ProdutosAvaliacoes(){
                     <Stars src={StarEmpty} alt="" />
                 </Armazem>
                 <Armazem>
-                    <NomeProdutos>Nome</NomeProdutos>
+                    <NomeProdutos>Coleira Eletrônica</NomeProdutos>
                     <Produtos>
-                    
+                        <ProdutoImage src={ColeiraEletronica} alt="" />
                     </Produtos>
                     <Stars src={StarEmpty} alt="" />
                     <Stars src={StarEmpty} alt="" />
@@ -73,9 +73,9 @@ function ProdutosAvaliacoes(){
                     <Stars src={StarEmpty} alt="" />
                 </Armazem>
                 <Armazem>
-                    <NomeProdutos>Nome</NomeProdutos>
+                    <NomeProdutos>Coleira Eletrônica</NomeProdutos>
                     <Produtos>
-                    
+                        <ProdutoImage src={ColeiraEletronica} alt="" />
                     </Produtos>
                     <Stars src={StarEmpty} alt="" />
                     <Stars src={StarEmpty} alt="" />
@@ -84,9 +84,9 @@ function ProdutosAvaliacoes(){
                     <Stars src={StarEmpty} alt="" />
                 </Armazem>
                 <Armazem>
-                    <NomeProdutos>Nome</NomeProdutos>
+                    <NomeProdutos>Coleira Eletrônica</NomeProdutos>
                     <Produtos>
-                    
+                        <ProdutoImage src={ColeiraEletronica} alt="" />
                     </Produtos>
                     <Stars src={StarEmpty} alt="" />
                     <Stars src={StarEmpty} alt="" />
@@ -94,6 +94,7 @@ function ProdutosAvaliacoes(){
                     <Stars src={StarEmpty} alt="" />
                     <Stars src={StarEmpty} alt="" />
                 </Armazem>
+                
               
                
             </Container>
