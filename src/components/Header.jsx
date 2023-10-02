@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import LogoImage from '../assets/logo 1.svg';
 import LoginImage from '../assets/Frame 2.svg';
 
+
 const HeaderContainer = styled.header`
     margin: 0;
     padding: 0;
@@ -44,10 +45,10 @@ const ImageHome = styled.img`
     position: absolute;
     bottom: 52em; 
     @media screen and (min-width: 1000px) {
-        bottom: 34em; 
+        bottom: 40em; 
 }
     @media screen and (min-width: 1200px) {
-        bottom: 50em; 
+        bottom: 51.5em; 
 }
 `;
 
